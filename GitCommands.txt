@@ -1,0 +1,97 @@
+•SET EMAIL
+git config --global user.email "imhaslop@gmail.com"
+
+•SET USER NAME
+git config --global user.name "philpotti"
+
+•SEE USER NAME AND EMAIL
+git config --global -l
+
+•SEE MORE DETAILS APART FROM USER AND EMAIL
+git config --list
+
+•CREATE A FOLDER IN A SPECIFIC DIRECTORY
+mkdir [fileName]
+
+•CREATE FILES INSIDE THE CREATED FOLDER
+touch [fileName]
+example: touch inicio.php
+		
+•CLEAR GIT CONSOLE
+Ctrl+l 
+
+•START THE PROJECT I'VE BEEN CREATING IN THE DIRECTORY
+git init
+
+•SEE WHICH FILES HAVE CHANGES TO SUBMIT OR NEW FILES THAT NEED TO BE PUSHED
+git status
+
+•ADD 1 FILE AT A TIME
+git add [fileName]
+
+•ADD ALL FILES
+git add .
+
+•SEE WHAT ARE THE SPECIFIC CHANGES I'VE DONE
+git diff
+
+•DELETE A FILE FROM STAGE
+git rm [filename]
+
+•UNDO A COMMIT
+Last changes disappear from code
+
+•SEE COMMITS OR CHANGES IN OUR FILE
+git log
+
+•UNDO 1 COMMIT
+git checkout .
+
+•GO TO A SPECIFIC COMMIT VERSION
+git checkout 3a6bf917dcae7a4a5e288e49c487454175d28baf (This hash is obtained using git log)
+
+•SYNCHRONIZE MY LOCAL REPO WITH REMOTE REPOSITORY IN GitHub
+git remote add origin https://github.com/philpotti/LearningGit.git
+
+•PUSH CHANGES INTO MASTER BRANCH
+git push -u origin master
+
+•CREATE A NEW BRANCH 
+git branch [branchName]
+
+•INDICATE Git in which branch we want to work in
+git branch
+git checkout [branchName]
+
+•VERIFY IN WHICH BRANCH WE ARE WORKING IN
+git branch
+
+•GO BACK TO MASTER BRANCH
+git checkout master 
+
+•MERGE 2 BRANCHES
+git merge [branchName]
+
+•DELETE A BRANCH
+git branch -d [branchName]
+
+•CREATE A NEW BRANCH
+git branch [branchName]
+
+•SWITCH TO BRANCH
+git checkout [branchName]
+
+•OPEN A SPECIFIC FILE 
+code [filename]
+
+Modificar archivo
+hacer
+git status
+git add .
+git commit -m "TEXTO DEL COMMIT"
+
+Switchear del branch creado a master
+git checkout master
+
+•IF SOMEONE IS WORKING ON THE SAME FILE I AM WORKING ON MUST PULL THE CHANGES FIRST
+git pull origin master
