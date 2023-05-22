@@ -2,7 +2,6 @@
     "singleQuote": true,
     "bracketSpacing": true,
     "printWidth": 100,
-    
     "git.confirmSync": false,
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
@@ -16,5 +15,4 @@
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
     "trailingComma": "es5"
-    
 }
