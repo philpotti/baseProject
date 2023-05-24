@@ -21,6 +21,19 @@ Cypress.Commands.add('selectProduct', (productName) => {
     })
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
