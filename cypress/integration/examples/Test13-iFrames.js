@@ -4,7 +4,9 @@ import 'cypress-iframe';
 
 describe('13th Test Suite', function () {
   it('My 13th test case', function () {
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+    // cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+
+    cy.visit(Cypress.env('baseUrl') + '/AutomationPractice/');
 
     cy.frameLoaded("#courses-iframe")
     cy.iframe().find("a[href*='mentorship']").eq(0).click()

@@ -11,12 +11,14 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+import ProductsPage from "../pageObjects/ProductsPage";
 
 Cypress.Commands.add('selectProduct', (productName) => {
+    const productsPage = new ProductsPage();
 
-    cy.get('h4.card-title').each(($el, index, $list) => {
+    productsPage.productsList().each(($el, index, $list) => {
         if ($el.text().includes(productName)) {
-            cy.get('button.btn.btn-info').eq(index).click();
+            productsPage.addProductButton().eq(index).click();
         }
     })
 })
