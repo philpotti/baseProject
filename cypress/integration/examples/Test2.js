@@ -2,7 +2,9 @@
 
 describe('2nd Test Suite', function () {
   it('My 2nd test case', function () {
-    cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');
+    // cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');
+    cy.visit(Cypress.env('baseUrl') + '/seleniumPractise/#/');
+
     cy.get('.search-keyword').type('ca');
     cy.wait(1500);
 

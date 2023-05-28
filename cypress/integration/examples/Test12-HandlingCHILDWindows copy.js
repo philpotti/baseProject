@@ -2,7 +2,8 @@
 
 describe('12th Test Suite', function () {
   it('My 12th test case', function () {
-    cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
+    // cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
+    cy.visit(Cypress.env('baseUrl') + '/AutomationPractice/');
     cy.get('#openwindow').invoke('removeAttr', 'onclick').click();
 
     cy.visit('http://www.qaclickacademy.com/');

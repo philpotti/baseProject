@@ -2,8 +2,8 @@
 
 describe('8th Test Suite', function () {
   it('My 8th test case', function () {
-    cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
-
+    // cy.visit('https://rahulshettyacademy.com/AutomationPractice/');
+    cy.visit(Cypress.env('baseUrl') + '/AutomationPractice/');
     cy.get('#alertbtn').click();
     cy.get('[value="Confirm"]').click();
 
