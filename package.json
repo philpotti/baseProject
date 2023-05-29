@@ -140,7 +140,10 @@
     "cypress-iframe": "^1.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "headlessTest": "npm run test -- --headless",
+    "chromeTest": "npm run test -- --browser chrome"
   },
   "author": "",
   "license": "ISC"

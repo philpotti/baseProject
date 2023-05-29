@@ -2,10 +2,20 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   viewportHeight: 1000,
+
   defaultCommandTimeout: 10000,
+
   chromeWebSecurity: false,
+
+  retries: {
+    runMode: 1,
+  },
+
+  video: false,
+
   env: {
     baseUrl: "https://rahulshettyacademy.com"
+
   },
   e2e: {
     setupNodeEvents(on, config) {

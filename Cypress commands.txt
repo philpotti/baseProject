@@ -1,0 +1,2 @@
+Run a specific spec, from a specific env url in headed mode and in Chrome browser 
+npx cypress run --spec "cypress\integration\examples\Test12-HandlingCHILDWindows copy.js" --headed --browser chrome --env url="https://rahulshettyacademy.com"
